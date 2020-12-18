@@ -4,12 +4,15 @@ module.exports = {
     purge: ["src/**/*.html"],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        fontFamily: {
+            sans: ['Inter', 'sans-serif']
+        },
         extend: {
             colors: {
                 teal: colors.teal,
             },
             fontFamily: {
-                inter: ['Inter', 'sans-serif']
+                sans: ['Inter', 'sans-serif']
             },
         },
     },

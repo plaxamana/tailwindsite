@@ -7,33 +7,82 @@
     <title>Beginner Tailwind</title>
 </head>
 
-<body class="bg-emerald-500">
+<body class="font-sans">
     <!-- ================================================ -->
     <!-- header/navigation =========================================-->
     <!-- ================================================ -->
-    <div class="text-gray-600">
-        <div class="container mx-auto flex justify-between px-6 lg:px-0 py-6">
-            <!-- left header section -->
-            <div class="flex space-x-4 items-center text-teal-800">
-                <a href="#" class="font-bold text-2xl">Beginner Tailwind</a>
-                <a href="#" class="hover:text-gray-900">About</a>
-                <a href="#" class="hover:text-gray-900">What You'll Learn</a>
-                <a href="#" class="hover:text-gray-900">Pricing</a>
-                <a href="#" class="hover:text-gray-900">FAQ</a>
-            </div>
+    <div class="bg-gradient-to-br from-white to-gray-300">
 
-            <!-- right header section  -->
-            <div class="space-x-4">
-                <a href="#" class="hover:text-gray-900">Login</a>
-                <a href="#" class="inline-block p-3 bg-purple-300 hover:bg-purple-400 hover:text-purple-100 transition duration-300 text-purple-700 rounded shadow hover:shadow-xl">Get the Course</a>
+        <!-- left circle decoration  -->
+        <div class="absolute top-0 left-0 transform translate-x-6 translate-y-4">
+            <div class="absolute opacity-50 z-index-1 mt-24 bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full"></div>
+            <div class="absolute opacity-50 z-index-1 ml-10 mt-10 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full"></div>
+            <div class="absolute opacity-50 z-index-1 ml-24 mt-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full"></div>
+        </div>
+
+        <!-- right circle decoration  -->
+        <div class="hidden lg:block absolute top-0 right-0 mr-8 transform -translate-x-64 translate-y-64">
+            <div class="absolute opacity-50 mt-24 bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full"></div>
+            <div class="absolute opacity-50 ml-10 mt-10 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full"></div>
+            <div class="absolute opacity-50 ml-24 mt-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full"></div>
+        </div>
+
+        <!-- navigation  -->
+        <div class="relative text-gray-600">
+            <div class="container mx-auto flex justify-between px-6 lg:px-4 py-6">
+                <!-- left header section -->
+                <div class="flex space-x-4 items-center text-teal-800">
+                    <a href="#" class="font-bold text-2xl">Beginner Tailwind</a>
+                    <a href="#" class="hidden lg:inline-block hover:text-gray-900">About</a>
+                    <a href="#" class="hidden lg:inline-block hover:text-gray-900">What You'll Learn</a>
+                    <a href="#" class="hidden lg:inline-block hover:text-gray-900">Pricing</a>
+                    <a href="#" class="hidden lg:inline-block hover:text-gray-900">FAQ</a>
+                </div>
+
+                <!-- right header section  -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class=" hover:text-gray-900">Login</a>
+                    <a href="#" class="hidden lg:inline-block p-3 bg-purple-300 hover:bg-purple-400 hover:text-purple-100 transition duration-300 text-purple-700 rounded shadow hover:shadow-xl">Get the Course</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================== -->
+        <!-- hero  ============================================-->
+        <!-- ==================================== -->
+
+        <div class="relative">
+            <div class="container mx-auto px-6 lg:px-0 text-center py-24">
+                <!-- heading  -->
+                <h1 class="mb-6 text-5xl lg:text-6xl font-extrabold tracking-wide">
+                    <span class="text-transparent 
+                    bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text">Beginning</span>
+                    <span class="text-transparent 
+                    bg-gradient-to-r from-teal-500 via-purple-600 to-purple-500 bg-clip-text">Tailwind</span>
+                </h1>
+
+                <!-- paragraph -->
+                <p class="mb-8 text-lg lg:text-2xl text-gray-700">Make good looking designs quickly. All without a single line of custom css.</p>
+
+                <!-- CTA  -->
+                <a href="#" class="mb-16 lg:mb-32 inline-block py-3 px-12 rounded 
+                bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 text-purple-100 hover:text-white shadow-lg hover:shadow-2xl
+                tracking-wide font-bold transition-all duration-500">Get the Course</a>
+
+                <!-- hero image  -->
+                <div class="relative">
+                    <img src="https://i.imgur.com/wysbBMS.png" alt="Teaser image" class="rounded-lg shadow-2xl border-4 border-purple-400" />
+
+                    <!-- hero image info box  -->
+                    <div class="mt-8 lg:mt-0 lg:absolute top-0 right-0 bg-yellow-100 lg:transform lg:translate-x-4 lg:-translate-y-4 text-left 
+                    py-4 px-8 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500">
+                        <p><strong class="font-bold">We'll create BeginnerTailwind.com</strong> <span class="opacity-75">(it's the site you're on now)</span></p>
+                        <p>We'll do it all without a single line of custom CSS!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- ====================================== -->
-    <!-- hero  ============================================-->
-    <!-- ==================================== -->
-
 
     <!--======================================--  -->
     <!-- overview =========================================-->
