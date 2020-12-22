@@ -1,12 +1,10 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+    important: true,
     purge: ["src/**/*.html"],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        fontFamily: {
-            sans: ['Inter', 'sans-serif']
-        },
         extend: {
             colors: {
                 teal: colors.teal,
