@@ -61,7 +61,7 @@
         <div class="relative">
             <!-- purple bar to help with the section transition -->
             <div class="absolute bottom-0 inset-x-0 h-64 bg-purple-700"></div>
-            <div class="container mx-auto px-6 lg:px-0 text-center py-24">
+            <div class="container mx-auto px-10 text-center py-24">
                 <!-- heading  -->
                 <h1 class="mb-6 text-5xl lg:text-6xl font-extrabold tracking-wide">
                     <span class="text-transparent 
@@ -101,7 +101,7 @@
         <!-- gray bar to help section transition -->
         <div class="absolute bottom-0 inset-x-0 h-64 bg-gray-300"></div>
 
-        <div class="relative container mx-auto px-6 lg:px-0">
+        <div class="relative container mx-auto px-10">
             <h2 class="mb-12 text-4xl lg:text-6xl font-bold text-purple-50">Writing CSS is tough stuff!</h2>
 
 
@@ -143,7 +143,7 @@
     <!-- about me =========================================-->
     <!-- ==================================== -->
     <div class="lg:pt-12 pb-24 bg-gray-300 lg:text-center">
-        <div class="container mx-auto px-6 lg:px-0">
+        <div class="container mx-auto px-10">
             <h2 class="mb-4 text-3xl lg:text-6xl font-bold text-teal-900">Some Tailwind Videos I've Done</h2>
             <p class="text-xl mb-10 leading-loose">Hey there! My name is
                 <a href="#" class="text-blue-500 hover:underline">Chris on Code</a> and I founded a web dev tutorial site Scotch.io. We were able to grow to 4M monthly pageviews and $300,000 yearly revenue. Scotch.io was acquired by DigitalOcean in November
@@ -169,7 +169,7 @@
     <!-- what we'll learn =========================================-->
     <!-- ==================================== -->
     <div class="py-32 bg-gray-200 text-gray-700">
-        <div class="container mx-auto px-6 lg:px-0">
+        <div class="container mx-auto px-10">
 
             <!-- header  -->
             <div class="relative">
@@ -246,7 +246,7 @@
     <!-- what we'll build =========================================-->
     <!-- ==================================== -->
     <div class="py-24 bg-gray-300 text-gray-600">
-        <div class="container mx-auto px-6 lg:px-0">
+        <div class="container mx-auto px-10">
             <div class="mb-8 text-center">
                 <h2 class="mb-2 text-5xl text-gray-800 font-bold">What We'll Build</h2>
                 <p class="text-lg text-gray-700">These components are the things you'll have to create in every project.
@@ -282,7 +282,7 @@
         <!-- gray box for the top section -->
         <div class="absolute top-0 inset-x-0 h-48 bg-gray-300"></div>
 
-        <div class="container mx-auto px-6 lg:px-0 flex flex-col space-y-4 lg:space-y-0 lg:space-x-8 items-center text-center lg:flex-row">
+        <div class="container mx-auto px-10 flex flex-col space-y-4 lg:space-y-0 lg:space-x-8 items-center text-center lg:flex-row">
 
             <!-- left box -->
             <div class="order-2 lg:order-1 pt-12 w-full lg:w-1/3 lg:text-right space-y-2 text-xl">
@@ -322,7 +322,7 @@
     <!-- ==================================== -->
     <div class="bg-gray-800 py-32 text-gray-400">
 
-        <div class="container mx-auto px-6 lg:px-0">
+        <div class="container mx-auto px-10">
             <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
 
             <!-- grid of questions  -->
@@ -371,13 +371,20 @@
     <!-- ====================================== -->
     <!-- footer/newsletter =========================================-->
     <!-- ==================================== -->
-    <div class="bg-gradient-to-br from-gray-100 to-gray-300 py-24 bg-gray-100 text-gray-600">
-        <div class="container mx-auto px-6 lg:px-0">
+    <div class="relative bg-gradient-to-br from-gray-100 to-gray-300 py-24 bg-gray-100 text-gray-600">
+        <!-- circles  -->
+        <div class="absolute top-0 left-6 transform translate-y-6 translate-x-">
+            <div class="absolute w-24 h-24 -ml-3 opacity-50 rounded-full from-teal-100 to-teal-300 bg-gradient-to-br "></div>
+            <div class="absolute w-24 h-24 ml-6 opacity-50 rounded-full from-purple-100 to-purple-300 bg-gradient-to-br "></div>
+            <div class="absolute w-24 h-24 ml-3 mt-9 opacity-50 rounded-full from-red-100 to-red-300 bg-gradient-to-br "></div>
+        </div>
+
+        <div class="relative container mx-auto px-10">
             <!-- top footer  -->
-            <div class="flex justify-between">
+            <div class="lg:flex space-y-12 lg:space-y-0 justify-between">
                 <!-- newsletter  -->
                 <div class="flex flex-col justify-center ">
-                    <h4 class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500 mb-6 font-bold text-5xl">Get updates on this course</h4>
+                    <h4 class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500 mb-6 font-bold text-2xl lg:text-5xl">Get updates on this course</h4>
                     <form action="#" method="POST" class="flex">
                         <input type="email" name="email" placeholder="super@secret.com" class="w-full placeholder-gray-300 p-3 rounded-l outline-none border-2 border-r-0 border-gray-400 focus:border-purple-400">
                         <button class="p-3 bg-purple-400 text-purple-100 rounded-r">Subscribe</button>
@@ -385,7 +392,7 @@
                 </div>
                 <!-- links  -->
 
-                <div class="text-right flex space-x-8">
+                <div class="text-center lg:text-right md:flex md:justify-center space-y-8 md:space-y-0 md:space-x-8">
                     <div class="space-y-2">
                         <p class="mb-3 text-gray-400 uppercase font-bold tracking-widest">Company</p>
                         <a href="#" class="block text-gray-800 hover:underline">About</a>
@@ -413,7 +420,7 @@
             </div>
 
             <!-- bottom footer  -->
-            <div class="flex justify-between border-t border-gray-300 pt-4 mt-4 text-sm">
+            <div class="text-center space-y-4 md:space-y-0 md:text-left md:flex justify-between border-t border-gray-300 pt-4 mt-4 text-sm">
                 <!-- copyright  -->
                 <div>Copright &copy; 2020</div>
                 <!-- links  -->
